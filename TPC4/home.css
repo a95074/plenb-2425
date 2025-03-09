@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth; /* Permite que seja dado scroll na página */
+}
+
+body {
+    background-color: #e3e0e0; /* Cor do fundo */
+}
+
+.header { /* Imagem do título */
+    background-image: url('imagens/header_home.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+}
+
+.header h1 { /* Texto do título */
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    margin: 0;
+}
+
+.imagem_icones {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens passem para a fila seguinte consoante a janela aumenta ou diminui */
+    justify-content: space-around; 
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adiciona espaço abaixo das imagens */
+}
+
+figure {
+    display: flex;
+    flex-direction: column; /* Garante que a legenda fique abaixo da imagem */
+    align-items: center;
+    min-width: 400px; /* Define uma largura mínima */
+    max-width: 450px;
+    margin: 0;
+    flex: 1 1 200px; 
+    box-sizing: border-box;
+    height: auto; 
+}
+
+figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+    font-size: 30px; 
+    color: rgb(255, 255, 255); 
+    margin-top: 10px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    min-height: 30px;
+    text-align: center;
+    line-height: 1.2; 
+    overflow-wrap: break-word; 
+}
+
+figure img {
+    width: 100%;
+    height: 300px; /* Garante que todas as imagens tenham o mesmo tamanho */
+    object-fit: cover; /* Garante o corte correto da imagem (pelo sim pelo nao) */
+    border-radius: 8px; 
+}
+
+.extra_space { /* Espaço extra no final de tudo para o site não acabar de repente */
+    height: 100px; 
+}

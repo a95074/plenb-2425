@@ -1,0 +1,178 @@
+/* Imagens que aparecem no topo mais título */
+.imagens_header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    height: 400px; 
+    overflow: hidden; 
+}
+
+.header h1 {
+    font-size: 85px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    width: 100%;
+}
+
+figure {
+    flex: 1; 
+    max-width: 100%; 
+    height: 100%; 
+    margin: 0;
+    overflow: hidden; 
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(70%); /*Faz as imagens ficarem mais escuras para melhor visualização do título*/
+}
+
+
+/* O que fazer em Bali */
+.atividades_bali {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 5px; /* Define o quão perto da imagem da esquerda eu quero o texto da direita */
+}
+
+.imagem_atividades {
+    width: 35%;
+    height: auto;
+}
+
+.texto_atividades {
+    width: 60%; /* Aumenta a largura do texto para preencher o espaço */
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #000000;
+    padding-left: 0px; /* Remove o espaçamento à esquerda */
+    margin-left: 0px; /* Garante que não haja margem extra */
+}
+
+.texto_atividades h2 {
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.texto_atividades ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* O que comer em Bali */
+.comida_bali {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 5px; 
+}
+
+.imagem_comida {
+    width: 35%;
+    height: auto;
+}
+
+.texto_comida {
+    width: 60%; 
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #000000;
+    padding-left: 0px; 
+    margin-left: 0px; 
+}
+
+.texto_comida h2 {
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.texto_comida ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Que cidades visitar */
+.cidades_bali {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 5px; 
+}
+
+.imagem_cidade {
+    width: 35%;
+    height: auto;
+}
+
+.texto_cidade {
+    width: 60%; 
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #000000;
+    padding-left: 0px; 
+    margin-left: 0px; 
+}
+
+.texto_cidade h2 {
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.texto_cidade ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Imagens que aparecem no fim (album de fotos) */
+
+.imagens_album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    height: auto; 
+    overflow: hidden; 
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+figure {
+    flex: 1 1 30%; 
+    max-width: 100%; 
+    height: 400px; 
+    margin: 0;
+    overflow: hidden; 
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.extra-space {
+    height: 100px;
+}
