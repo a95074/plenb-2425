@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Pesquisar</title>
+<style>
+    .highlight {
+        background-color: yellow;
+        font-weight: bold;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Resultados da Pesquisa</h1>
+
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+            <form class="d-flex" action="/pesquisar" method="GET">
+                <input class="form-control me-2" type="search" name="termo" placeholder="Pesquisar" aria-label="Pesquisar" value="{{ termo }}">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </div>
+
+    {% if resultados %}
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul class="list-group">
+                    {% for designacao, descricao in resultados %}
+                        <li class="list-group-item mb-3">
+                            <a href="/conceitos/{{ designacao }}" class="text-primary">
+                                <strong>{{ designacao }}</strong>
+                            </a>: {{ descricao | safe }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% else %}
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <p class="text-muted">Nenhum resultado encontrado para "{{ termo }}".</p>
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
