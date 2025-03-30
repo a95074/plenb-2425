@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/static/DEM_thumbnail.jpg" alt="" width="92" height="77">
+    <h1 class="display-5 fw-bold text-body-emphasis">Dicionário Médicos</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Este foi criado nas aulas</p>
+      <a href="/conceitos" class="btn btn-primary btn-lg px-4 gap-3">Conceitos</a>
+      <a href="/pesquisar" class="btn btn-outline-secondary btn-lg px-4">Pesquisar</a>
+    </div>
+</div>
+{% endblock %}

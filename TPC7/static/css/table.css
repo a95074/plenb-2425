@@ -1,0 +1,40 @@
+table.dataTable thead th {
+    background-color: #343a40; 
+    color: #fff;              
+    font-size: 1.1rem;
+}
+
+
+table.dataTable tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+
+table.dataTable tbody tr:hover {
+    background-color: #ced4da;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background-color: #343a40;
+    color: #fff !important;
+    border-radius: 0.25rem;
+    margin: 0 0.2rem;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #007bff;
+}
+
+.dataTables_filter {
+    text-align: center !important;
+    margin-bottom: 10px;
+}
+
+
+.dataTables_paginate {
+    text-align: right !important;
+    margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>{{ title }}</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="/static/css/table.css">
+    <div class="container p-5 mt-10">
+        <table id="tabela_conceitos" class="display">
+        <thead>
+            <tr>
+                <th>Designação</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            {% for designacao, descricao in db.items() %}
+                <tr>
+                    <td> {{designacao}} </td>
+                    <td> {{descricao}}</td>
+                </tr>
+            {% endfor %}
+
+        </tbody>
+        </table>
+    </div>
+
+{% endblock %}
